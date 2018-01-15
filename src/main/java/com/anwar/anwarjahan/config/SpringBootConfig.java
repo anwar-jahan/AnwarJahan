@@ -2,31 +2,14 @@ package com.anwar.anwarjahan.config;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
-import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.context.annotation.Bean;
-import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.ResponseBody;
-
-//import com.anwar.anwarjahan.model.CustomerMongo;
-
 
 @SpringBootApplication
 public class SpringBootConfig {
-
-	
-
 	private static final Logger log = LoggerFactory.getLogger(SpringBootConfig.class);
 
 	public static void main(String[] args) throws Exception {
-		
-		//System.setProperty("spring.profiles.default", "dev");
-		
 		log.info("Starting Spring boot......");
 		SpringApplication.run(SpringBootConfig.class, args);
 	}
